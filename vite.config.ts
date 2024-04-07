@@ -11,7 +11,6 @@ export default defineConfig({
     include: ['react', 'react-dom'],
   },
   server: {
-    clearScreen: false,
     watch: {
       usePolling: true,
     }

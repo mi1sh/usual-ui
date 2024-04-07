@@ -5,9 +5,5 @@ interface ButtonProps {
 }
 
 export const Button = ({children}: ButtonProps): ReactNode => {
-	return (
-		<>
-			<button>{children}</button>
-		</>
-	);
+	return <button className="bg-red-600">{children}</button>
 }
