@@ -8,7 +8,7 @@ describe(`Component: ${Button.name}`, () => {
 		expect(container).toMatchInlineSnapshot(`
 			<div>
 			  <button
-			    class="bg-red-600"
+			    class="transition duration-75 text-blue-400 hover:scale-105 hover:text-blue-300 active:scale-100 active:text-blue-400"
 			  >
 			    My button
 			  </button>
