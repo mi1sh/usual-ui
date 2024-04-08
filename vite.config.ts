@@ -1,12 +1,14 @@
+/// <reference types="vitest" />
 import { defineConfig } from 'vite'
 import {resolve} from 'path';
 import react from '@vitejs/plugin-react'
 import tsconfigPaths from 'vite-tsconfig-paths';
 import reactRefresh from '@vitejs/plugin-react-refresh';
+import dts from 'vite-plugin-dts';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), tsconfigPaths(), reactRefresh()],
+  plugins: [react(), tsconfigPaths(), reactRefresh(), dts({rollupTypes: true})],
   optimizeDeps: {
     include: ['react', 'react-dom'],
   },
@@ -33,5 +35,11 @@ export default defineConfig({
         }
       }
     }
-  }
+  },
+  test: {
+    globals: true,
+    environment: 'jsdom',
+    setupFiles: './lib/test/setup.ts',
+    css: true,
+  },
 })
