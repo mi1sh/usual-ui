@@ -1,6 +1,6 @@
 import type { ComponentProps } from "react";
 import { cva, VariantProps } from "class-variance-authority";
-import { cn } from "../utils/utils.tsx";
+import { cn } from "../../utils/utils.tsx";
 import { forwardRef } from "react";
 
 const buttonStyles = cva(
@@ -8,7 +8,6 @@ const buttonStyles = cva(
     "w-full",
     "rounded-md",
     "active:bg-primary-700",
-    "font-semibold",
     "disabled:cursor-not-allowed",
     "focus:outline-none",
     "transition-colors",
@@ -28,6 +27,17 @@ const buttonStyles = cva(
       },
       colorscheme: {
         primary: "text-white",
+      },
+      weight: {
+        thin: "font-thin",
+        normal: "font-normal",
+        medium: "font-medium",
+        semibold: "font-semibold",
+        bold: "font-bold",
+        black: "font-black",
+      },
+      underline: {
+        true: "underline underline-offset-2",
       },
     },
     compoundVariants: [
@@ -50,6 +60,7 @@ const buttonStyles = cva(
     ],
     defaultVariants: {
       variant: "solid",
+      weight: "semibold",
       size: "md",
       colorscheme: "primary",
     },
@@ -60,12 +71,10 @@ type ButtonProps = ComponentProps<"button"> & VariantProps<typeof buttonStyles>;
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   ({ variant, size, colorscheme, className, ...props }, ref) => {
-    return (
-      <button
+    return <button
         ref={ref}
         className={cn(buttonStyles({ variant, size, colorscheme, className }))}
         {...props}
       />
-    );
   },
 );

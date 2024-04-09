@@ -6,7 +6,7 @@
     "module": "ESNext",
     "skipLibCheck": true,
     "paths": {
-      "usual-ui": ["./lib/main.tsx"],
+      "usual-ui": ["./lib/main.ts"],
     },
 
     /* Bundler mode */

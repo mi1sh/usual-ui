@@ -1,5 +1,5 @@
 import {render} from '@testing-library/react';
-import {Button} from './Button';
+import {Button} from './Button.tsx';
 
 describe(`Component: ${Button.name}`, () => {
 	it('should render', () => {
@@ -8,7 +8,7 @@ describe(`Component: ${Button.name}`, () => {
 		expect(container).toMatchInlineSnapshot(`
 			<div>
 			  <button
-			    class="transition duration-75 text-blue-400 hover:scale-105 hover:text-blue-300 active:scale-100 active:text-blue-400"
+			    class="w-full rounded-md active:bg-primary-700 disabled:cursor-not-allowed focus:outline-none transition-colors duration-200 px-4 py-2 text-base text-white font-semibold bg-primary-500 hover:bg-primary-600"
 			  >
 			    My button
 			  </button>
