@@ -1,6 +1,7 @@
-import type { ComponentProps, ReactNode } from "react";
+import type { ComponentProps } from "react";
 import { cva, VariantProps } from "class-variance-authority";
 import { cn } from "../utils/utils.tsx";
+import { forwardRef } from "react";
 
 const buttonStyles = cva(
   [
@@ -57,17 +58,14 @@ const buttonStyles = cva(
 
 type ButtonProps = ComponentProps<"button"> & VariantProps<typeof buttonStyles>;
 
-export const Button = ({
-  variant,
-  size,
-  colorscheme,
-  className,
-  ...props
-}: ButtonProps): ReactNode => {
-  return (
-    <button
-      className={cn(buttonStyles({ variant, size, colorscheme, className }))}
-      {...props}
-    />
-  );
-};
+export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
+  ({ variant, size, colorscheme, className, ...props }, ref) => {
+    return (
+      <button
+        ref={ref}
+        className={cn(buttonStyles({ variant, size, colorscheme, className }))}
+        {...props}
+      />
+    );
+  },
+);
