@@ -88,8 +88,7 @@ export const Text: TextComponent = forwardRef(
   ) => {
     const Component = as || "span";
 
-    return (
-      <Component
+    return <Component
         ref={ref}
         className={cn(
           textStyles({
@@ -106,6 +105,5 @@ export const Text: TextComponent = forwardRef(
         )}
         {...props}
       />
-    );
   },
 );
