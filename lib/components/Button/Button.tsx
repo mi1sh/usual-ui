@@ -5,7 +5,7 @@ import { forwardRef } from "react";
 
 const buttonStyles = cva(
   [
-    "w-full",
+    "w-auto",
     "rounded-md",
     "active:bg-primary-700",
     "disabled:cursor-not-allowed",
@@ -19,6 +19,7 @@ const buttonStyles = cva(
         solid: "",
         outline: "border-2 active:bg-primary-200",
         ghost: "active:bg-primary-200",
+        underline: "bg-none active:bg-transparent hover:bg-none hover:underline",
       },
       size: {
         sm: "px-4 py-2 text-sm",
@@ -56,6 +57,11 @@ const buttonStyles = cva(
         variant: "ghost",
         colorscheme: "primary",
         className: "text-primary-600 bg-transparent hover:bg-primary-100",
+      },
+      {
+        variant: "underline",
+        colorscheme: "primary",
+        className: "text-primary-600 hover:text-primary-400 underline-offset-2 active:text-primary-600",
       },
     ],
     defaultVariants: {

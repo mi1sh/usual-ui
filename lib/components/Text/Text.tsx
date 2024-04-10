@@ -17,12 +17,12 @@ const textStyles = cva("w-full", {
       low: "text-gray-600 font-light",
     },
     size: {
-      sm: "px-4 py-2 text-sm",
-      md: "px-4 py-2 text-base",
-      lg: "px-6 py-3 text-lg",
-      xl: "px-6 py-3 text-xl",
-      "2xl": "px-8 py-4 text-2xl",
-      "3xl": "px-8 py-4 text-3xl",
+      sm: "px-2 py-1 text-sm",
+      md: "px-2 py-1 text-base",
+      lg: "px-3 py-2 text-lg",
+      xl: "px-4 py-2 text-xl",
+      "2xl": "px-4 py-2 text-2xl",
+      "3xl": "px-4 py-2 text-3xl",
     },
     weight: {
       thin: "font-thin",
@@ -54,7 +54,7 @@ const textStyles = cva("w-full", {
   ],
   defaultVariants: {
     variant: "default",
-    weight: "semibold",
+    weight: "medium",
     size: "md",
     align: "left",
   },

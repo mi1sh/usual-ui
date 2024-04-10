@@ -34,3 +34,10 @@ export const Ghost: Story = {
 		variant: 'ghost',
 	}
 }
+
+export const Underline: Story = {
+	args: {
+		children: "Button",
+		variant: "underline",
+	}
+}

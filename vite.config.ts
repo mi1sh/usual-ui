@@ -21,8 +21,8 @@ export default defineConfig({
     // lib entry and output settings
     lib: {
       entry: resolve(__dirname, 'lib/main.ts'),
-      fileName: 'usual-ui',
-      name: 'usual-ui'
+      name: 'usual-ui',
+      fileName: 'usual-ui'
     },
     // bundler options
     rollupOptions: {
