@@ -8,7 +8,7 @@ describe(`Component: ${Text.name}`, () => {
 		expect(container).toMatchInlineSnapshot(`
 			<div>
 			  <span
-			    class="w-full px-4 py-2 text-base font-semibold text-left"
+			    class="w-full px-2 py-1 text-base font-medium text-left"
 			  >
 			    My text
 			  </span>

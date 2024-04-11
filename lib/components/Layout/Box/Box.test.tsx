@@ -7,7 +7,9 @@ describe(`Component: ${Box.name}`, () => {
 
 		expect(container).toMatchInlineSnapshot(`
 			<div>
-			  <div>
+			  <div
+			    class="p-1 px-1.5 text-center w-auto"
+			  >
 			    My box
 			  </div>
 			</div>

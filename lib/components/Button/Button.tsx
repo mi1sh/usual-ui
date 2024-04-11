@@ -19,7 +19,7 @@ const buttonStyles = cva(
         solid: "",
         outline: "border-2 active:bg-primary-200",
         ghost: "active:bg-primary-200",
-        underline: "bg-none active:bg-transparent hover:bg-none hover:underline",
+        underline: "underline-offset-2 active:bg-transparent active:text-primary-600 hover:underline hover:text-primary-400",
       },
       size: {
         sm: "px-4 py-2 text-sm",
@@ -61,7 +61,7 @@ const buttonStyles = cva(
       {
         variant: "underline",
         colorscheme: "primary",
-        className: "text-primary-600 hover:text-primary-400 underline-offset-2 active:text-primary-600",
+        className: "hover:bg-transparent text-primary-500 bg-transparent",
       },
     ],
     defaultVariants: {
