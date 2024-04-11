@@ -3,7 +3,7 @@ import { cva, VariantProps } from "class-variance-authority";
 import { cn } from "../../../utils/utils.tsx";
 
 const boxStyles = cva(
-  ["w-auto", "text-center", "p-1 px-1.5"],
+  ["w-full", "text-center", "p-1 px-1.5"],
   {
     variants: {
       variant: {
@@ -32,7 +32,7 @@ const boxStyles = cva(
     defaultVariants: {
       variant: "default",
       align: "center",
-      size: "auto",
+      size: "full",
     },
   },
 

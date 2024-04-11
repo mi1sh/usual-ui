@@ -17,7 +17,7 @@ const buttonStyles = cva(
     variants: {
       variant: {
         solid: "",
-        outline: "border-2 active:bg-primary-200",
+        outline: "border active:bg-primary-200",
         ghost: "active:bg-primary-200",
         underline: "underline-offset-2 active:bg-transparent active:text-primary-600 hover:underline hover:text-primary-400",
       },
@@ -37,9 +37,6 @@ const buttonStyles = cva(
         bold: "font-bold",
         black: "font-black",
       },
-      underline: {
-        true: "underline underline-offset-2",
-      },
     },
     compoundVariants: [
       {
@@ -51,12 +48,12 @@ const buttonStyles = cva(
         variant: "outline",
         colorscheme: "primary",
         className:
-          "text-primary-600 border-primary-500 bg-transparent hover:bg-primary-100",
+          "text-primary-400 border-primary-500 bg-transparent hover:bg-primary-100",
       },
       {
         variant: "ghost",
         colorscheme: "primary",
-        className: "text-primary-600 bg-transparent hover:bg-primary-100",
+        className: "text-primary-400 bg-transparent hover:bg-primary-100",
       },
       {
         variant: "underline",

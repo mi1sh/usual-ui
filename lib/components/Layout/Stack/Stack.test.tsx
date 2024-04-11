@@ -8,7 +8,7 @@ describe(`Component: ${Stack.name}`, () => {
 		expect(container).toMatchInlineSnapshot(`
 			<div>
 			  <div
-			    class="p-1 px-1.5 text-center w-auto flex flex-col items-start"
+			    class="text-center w-full flex flex-col items-start p-4"
 			  >
 			    My stack
 			  </div>

@@ -35,9 +35,9 @@ export const Row: Story = {
     },
     render: (args) => (
         <Stack className="bg-gray-400" {...args}>
-            <Box className="w-[100px] h-[100px] bg-blue-500" />
-            <Box className="w-[100px] h-[100px] bg-red-500" />
-            <Box className="w-[100px] h-[100px] bg-green-500" />
+            <Box variant="outline">First</Box>
+            <Box variant="outline">Second</Box>
+            <Box variant="outline">Third</Box>
         </Stack>
     ),
 };
