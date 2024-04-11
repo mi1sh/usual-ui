@@ -47,7 +47,7 @@ The **Stack** component allows you to arrange child components in a row or colum
 ```
 <div align="center">
 
-![stack-img.png](img_3.png)
+![stack-example](https://github.com/mi1sh/usual-ui/assets/106558234/94e64030-cb50-4496-92fa-23d2bc75a23b)
 </div>
 
 In this library I have added **4 types of buttons**, you can change the style of the button using the "variant" attribute:
@@ -59,7 +59,7 @@ In this library I have added **4 types of buttons**, you can change the style of
 ```
 <div align="center">
 
-![buttons-example.gif](https://imgur.com/a/PsBMALl.gif)
+![buttons-example](https://github.com/mi1sh/usual-ui/assets/106558234/11fff3d1-cac6-412d-93d4-9f544c9ba1dd)
 </div>
 
 ## 📚Components
