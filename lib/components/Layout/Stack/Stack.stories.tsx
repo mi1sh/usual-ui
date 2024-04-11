@@ -14,12 +14,30 @@ const meta: Meta<typeof Stack> = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {
+export const Column: Story = {
+    args: {
+        direction: 'column',
+        gap: "md"
+    },
   render: (args) => (
-    <Stack className="gap-4 p-4 bg-gray-400" {...args}>
+    <Stack className="bg-gray-400" {...args}>
       <Box className="w-[100px] h-[100px] bg-blue-500" />
       <Box className="w-[100px] h-[100px] bg-red-500" />
       <Box className="w-[100px] h-[100px] bg-green-500" />
     </Stack>
   ),
+};
+
+export const Row: Story = {
+    args: {
+        direction: 'row',
+        gap: "md"
+    },
+    render: (args) => (
+        <Stack className="bg-gray-400" {...args}>
+            <Box className="w-[100px] h-[100px] bg-blue-500" />
+            <Box className="w-[100px] h-[100px] bg-red-500" />
+            <Box className="w-[100px] h-[100px] bg-green-500" />
+        </Stack>
+    ),
 };
