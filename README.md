@@ -1,5 +1,19 @@
 <div align="center">
 <h1><b>Usual-UI</b></h1>
+ <p align="center">
+  <a href="https://github.com/mi1sh/usual-ui/blob/main/LICENSE">
+    <img alt="GitHub" src="https://img.shields.io/github/license/mi1sh/usual-ui?color=lightgray">
+  </a>
+  <a href="https://www.npmjs.com/package/usual-ui">
+    <img alt="npm" src="https://img.shields.io/npm/v/usual-ui?color=lightgray">
+  </a>
+  <a href="https://www.npmjs.com/package/usual-ui">
+    <img alt="npm" src="https://img.shields.io/npm/dt/usual-ui?color=lightgray">
+  </a>
+  <a href="https://bundlephobia.com/package/usual-ui@latest">
+    <img alt="npm bundle size" src="https://img.shields.io/bundlephobia/minzip/usual-ui?color=lightgray">
+  </a>
+</p>
 <h4><b>Usual-UI</b> is a comprehensive library of React components designed to simplify the development of modern web applications. Built with a focus on usability and customization, this library provides a set of components that are easy to integrate into any React project. The components are styled with TailwindCSS, allowing for rapid styling and customization.</h4>
 </div>
 
